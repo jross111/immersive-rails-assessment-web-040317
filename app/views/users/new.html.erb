@@ -1,0 +1,10 @@
+
+
+
+<%= form_for User.new, controller: 'users', action: 'create' do |f| %>
+	<p><%= f.label :username %></p>
+	<p><%= f.text_field :username %></p>
+	<p><%= f.label :password %></p>
+	<p><%= f.password_field :password %></p>
+	<p><%= f.submit %></p>
+<% end %>
